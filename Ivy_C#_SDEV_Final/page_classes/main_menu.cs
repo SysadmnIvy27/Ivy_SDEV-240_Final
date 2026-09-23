@@ -69,7 +69,7 @@ namespace page_classes
                 time_remaining
             });
         }
-        private void OnNameBtnClick(object sender, EventArgs e) // Event listener for setting the User's name
+        private void OnNameBtnClick(object sender, EventArgs e) // Event listener for setting the User's name when the name_btn is clicked
         {
             username = name_text.Text;
             name_label.Text = username;
