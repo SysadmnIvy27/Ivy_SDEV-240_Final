@@ -68,7 +68,7 @@ namespace page_classes
         {
             AnswerButton.Enabled = false;
             ResponseLabel.Text = "Thinking";
-            GameLogic();  // hi my name is gamelogic
+            GameLogic();
         }
         public async Task GameLogic()
         {
@@ -82,7 +82,7 @@ namespace page_classes
                 if (current_guess < prev_guess && prev_guess < num)
                 {
                     ResponseLabel.Text = ("Idiot, I said you were low not high.");
-                    await Task.Delay(2000); 
+                    await Task.Delay(2000);
                 }
                 if (current_guess > prev_guess && prev_guess > num)
                 {
