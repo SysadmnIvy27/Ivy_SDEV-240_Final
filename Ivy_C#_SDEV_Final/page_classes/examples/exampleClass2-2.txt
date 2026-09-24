@@ -1,0 +1,15 @@
+namespace page_classes
+{
+	partial class <className>
+	{
+		private void init()
+		{
+            // Create controls and modify properties here
+			this.Controls.AddRange(new Control[]
+            {
+                    place each created control here to add it to the page
+            });
+		}
+		// Declare controls here
+	}
+}
