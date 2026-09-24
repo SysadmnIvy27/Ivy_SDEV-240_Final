@@ -71,11 +71,14 @@ namespace page_classes // namespace
         }
         private void OnNameBtnClick(object sender, EventArgs e) // Event listener for setting the User's name when the name_btn is clicked
         {
-            username = name_text.Text;
-            name_label.Text = username;
-            InfoChanged?.Invoke(this, EventArgs.Empty);
-            name_btn.Enabled = false;
-            Debug.WriteLine(username);
+            if (name_text.Text != "")
+            {
+                username = name_text.Text;
+                name_label.Text = username;
+                InfoChanged?.Invoke(this, EventArgs.Empty);
+                name_btn.Enabled = false;
+                Debug.WriteLine(username);
+            }
         }
         private void OnChipsBtnClicked(object sender, EventArgs e)
         {
