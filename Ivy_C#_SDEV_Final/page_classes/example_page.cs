@@ -68,7 +68,7 @@ namespace page_classes
         {
             AnswerButton.Enabled = false;
             ResponseLabel.Text = "Thinking";
-            GameLogic();  // hi my name is gamelogic
+            GameLogic();
         }
         public async Task GameLogic()
         {
