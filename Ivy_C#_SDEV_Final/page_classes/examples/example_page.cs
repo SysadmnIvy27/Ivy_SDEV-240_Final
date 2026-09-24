@@ -82,7 +82,7 @@ namespace page_classes
                 if (current_guess < prev_guess && prev_guess < num)
                 {
                     ResponseLabel.Text = ("Idiot, I said you were low not high.");
-                    await Task.Delay(2000); 
+                    await Task.Delay(2000);
                 }
                 if (current_guess > prev_guess && prev_guess > num)
                 {
