@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Ivy_C__SDEV_Final.Program;
+using static Ivy_C__SDEV_Final.Program
 
 namespace page_classes // namespace
 {
