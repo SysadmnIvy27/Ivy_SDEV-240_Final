@@ -1,0 +1,37 @@
+// Example class, use this as a template for your own pages.
+// Remember to replace <className> with the name of your class (Ex: GuessingGame), and place each created control in the Controls.AddRange() method.
+
+using Ivy_C__SDEV_Final;
+using static Ivy_C__SDEV_Final.Program;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing.Text;
+
+namespace page_classes
+{
+    public partial class <className> : TabPage
+    {
+        string page_name = "Example (Guessing Game)";
+        string username = Program.username;
+        int chips = Program.chips;
+
+        // Declare controls here
+
+        public <className>()
+        {
+            this.Text = page_name;
+
+            // Create controls and modify properties here
+
+            this.Controls.AddRange(new Control[]
+            {
+                    place each created control here to add it to the page
+            });
+        }
+    }
+}
+    
