@@ -67,7 +67,7 @@
     <Compile Include="page_classes\examples\example_page2.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="page_classes\mainmenu\main_menu.cs">
+    <Compile Include="page_classes\menus\main_menu.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="page_classes\examples\example_page.cs">
