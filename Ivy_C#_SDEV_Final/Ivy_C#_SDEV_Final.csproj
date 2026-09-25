@@ -61,10 +61,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="page_classes\examples\example_page2-2.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="page_classes\examples\example_page2.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="page_classes\main_menu.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="page_classes\example_page.cs">
+    <Compile Include="page_classes\examples\example_page.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Form1.cs">

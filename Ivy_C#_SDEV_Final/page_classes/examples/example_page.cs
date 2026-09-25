@@ -9,7 +9,7 @@ using System.Drawing.Text;
 
 namespace page_classes
 {
-    public partial class ExampleTabPage : TabPage
+    public partial class ExampleTabPageS1 : TabPage
     {
         string page_name = "Example (Guessing Game)";
         Random rand = new Random();
@@ -22,7 +22,7 @@ namespace page_classes
         private TextBox AnswerBox;
         private Button AnswerButton;
         private Timer ResetMsg;
-        public ExampleTabPage()
+        public ExampleTabPageS1()
         {
             this.Text = page_name;
 

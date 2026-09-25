@@ -1,4 +1,5 @@
-﻿using page_classes;
+﻿using menu_page_classes;
+using page_classes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Ivy_C__SDEV_Final.Program;
+using static System.Windows.Forms.TabControl;
 
 namespace Ivy_C__SDEV_Final
 {
@@ -34,7 +36,7 @@ namespace Ivy_C__SDEV_Final
             Debug.WriteLine("Loading Pages: ");
             foreach (Type type in types)
             {
-                if (Convert.ToString(type.Namespace) == "page_classes" && type.BaseType == typeof(TabPage))
+                if (Convert.ToString(type.Namespace) == "menu_page_classes" && type.BaseType == typeof(TabPage))
                 {
                     Debug.WriteLine($"{type.Name} loaded.");
                     object tab_obj = Activator.CreateInstance(type);
@@ -45,6 +47,14 @@ namespace Ivy_C__SDEV_Final
                         Mainmenu Menu_obj = tab_obj as Mainmenu;
                         Menu_obj.InfoChanged += OnInfoChanged;
                     }
+                }
+
+                if (Convert.ToString(type.Namespace) == "page_classes" && type.BaseType == typeof(TabPage))
+                {
+                    Debug.WriteLine($"{type.Name} loaded.");
+                    object tab_obj = Activator.CreateInstance(type);
+                    TabPage tab = tab_obj as TabPage;
+                    tabControl1.Controls.Add(tab);
                 }
             }
         }

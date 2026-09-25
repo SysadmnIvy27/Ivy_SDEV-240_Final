@@ -1,5 +1,8 @@
-// Example class, use this as a template for your own pages.
-// Remember to replace <className> with the name of your class (Ex: GuessingGame), and place each created control in the Controls.AddRange() method.
+/*
+Example class, use this as a template for your own pages.
+Remember to replace <className> with the name of your class (Ex: GuessingGame), and place each created control in the Controls.AddRange() method.
+for an alternate method, see exampleClass2. For a working demo class, see example_page.cs
+*/
 
 using Ivy_C__SDEV_Final;
 using static Ivy_C__SDEV_Final.Program;
