@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Ivy_C__SDEV_Final.Program;
 
-namespace menu_page_classes // namespace
+namespace menu_page_classes // namespace of this class, makes reference easier
 {
     public partial class Mainmenu : TabPage
     {
