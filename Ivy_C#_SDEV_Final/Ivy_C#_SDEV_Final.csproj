@@ -67,21 +67,21 @@
     <Compile Include="page_classes\examples\example_page2.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="page_classes\main_menu.cs">
+    <Compile Include="page_classes\mainmenu\main_menu.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="page_classes\examples\example_page.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Main\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Main\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Main\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
