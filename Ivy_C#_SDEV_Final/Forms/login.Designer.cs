@@ -1,6 +1,6 @@
-﻿namespace Ivy_C__SDEV_Final.Forms
+﻿namespace Ivy_C__SDEV_Final
 {
-    partial class login
+    partial class formLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.lblLogin = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnGuest = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // lblLogin
+            // 
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblLogin.Location = new System.Drawing.Point(143, 53);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(48, 20);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Login";
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Location = new System.Drawing.Point(92, 95);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(159, 20);
+            this.txtUsername.TabIndex = 1;
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(132, 121);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 2;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            // 
+            // btnGuest
+            // 
+            this.btnGuest.Location = new System.Drawing.Point(123, 150);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(98, 23);
+            this.btnGuest.TabIndex = 3;
+            this.btnGuest.Text = "Login as Guest";
+            this.btnGuest.UseVisualStyleBackColor = true;
+            // 
+            // formLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "login";
+            this.ClientSize = new System.Drawing.Size(360, 379);
+            this.Controls.Add(this.btnGuest);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblLogin);
+            this.Name = "formLogin";
+            this.Text = "Login";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label lblLogin;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnGuest;
     }
 }

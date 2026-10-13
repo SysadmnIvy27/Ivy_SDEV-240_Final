@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ivy_C__SDEV_Final.Forms
+namespace Ivy_C__SDEV_Final
 {
-    public partial class login : Form
+    public partial class formLogin : Form
     {
-        public login()
+        public formLogin()
         {
             InitializeComponent();
         }
