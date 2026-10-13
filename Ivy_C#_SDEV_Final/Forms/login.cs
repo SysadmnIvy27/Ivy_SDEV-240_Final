@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ivy_C__SDEV_Final.Forms
 {
-    public partial class login : Form
+    public partial class lblLogin : Form
     {
-        public login()
+        public lblLogin()
         {
             InitializeComponent();
         }
