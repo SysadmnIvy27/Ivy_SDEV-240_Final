@@ -1,6 +1,6 @@
-﻿namespace Ivy_C__SDEV_Final.Forms
+﻿namespace Ivy_C__SDEV_Final
 {
-    partial class lblLogin
+    partial class formLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblLogin = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnGuest = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblLogin
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(143, 53);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Login";
+            this.lblLogin.AutoSize = true;
+            this.lblLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lblLogin.Location = new System.Drawing.Point(143, 53);
+            this.lblLogin.Name = "lblLogin";
+            this.lblLogin.Size = new System.Drawing.Size(48, 20);
+            this.lblLogin.TabIndex = 0;
+            this.lblLogin.Text = "Login";
             // 
             // txtUsername
             // 
@@ -69,7 +69,7 @@
             this.btnGuest.Text = "Login as Guest";
             this.btnGuest.UseVisualStyleBackColor = true;
             // 
-            // lblLogin
+            // formLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -77,9 +77,9 @@
             this.Controls.Add(this.btnGuest);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.label1);
-            this.Name = "lblLogin";
-            this.Text = "login";
+            this.Controls.Add(this.lblLogin);
+            this.Name = "formLogin";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -87,7 +87,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblLogin;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Button btnGuest;
