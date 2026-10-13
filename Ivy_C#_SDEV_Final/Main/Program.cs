@@ -25,7 +25,7 @@ namespace Ivy_C__SDEV_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formLogin);
+            Application.Run(new formLogin());
         }
     }
 }
