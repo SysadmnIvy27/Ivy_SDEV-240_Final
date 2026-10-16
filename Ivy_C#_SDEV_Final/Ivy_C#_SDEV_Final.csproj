@@ -67,6 +67,12 @@
     <Compile Include="Forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\roulette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\roulette.Designer.cs">
+      <DependentUpon>roulette.cs</DependentUpon>
+    </Compile>
     <Compile Include="page_classes%28depricated%29\examples\example_page2-2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\roulette.resx">
+      <DependentUpon>roulette.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
