@@ -66,6 +66,11 @@
     </Compile>
     <Compile Include="Forms\texas_Holdem.Designer.cs">
       <DependentUpon>texas_Holdem.cs</DependentUpon>
+    <Compile Include="Forms\BlackJackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BlackJackForm.Designer.cs">
+      <DependentUpon>BlackJackForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\login.cs">
       <SubType>Form</SubType>
@@ -87,6 +92,9 @@
     </Compile>
     <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\BlackJackForm.resx">
+      <DependentUpon>BlackJackForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
