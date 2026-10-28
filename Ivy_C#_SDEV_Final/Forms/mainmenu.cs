@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ivy_C__SDEV_Final.Forms
 {
-    public partial class mainmenu : Form
+    public partial class frmMainMenu : Form
     {
-        public mainmenu()
+        public frmMainMenu()
         {
             InitializeComponent();
         }
