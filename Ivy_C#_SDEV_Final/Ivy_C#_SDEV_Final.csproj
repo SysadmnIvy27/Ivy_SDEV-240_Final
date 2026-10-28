@@ -85,6 +85,12 @@
     <Compile Include="Forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\mainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\mainmenu.Designer.cs">
+      <DependentUpon>mainmenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="page_classes%28depricated%29\examples\example_page2-2.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\mainmenu.resx">
+      <DependentUpon>mainmenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\texas_Holdem.resx">
       <DependentUpon>texas_Holdem.cs</DependentUpon>
