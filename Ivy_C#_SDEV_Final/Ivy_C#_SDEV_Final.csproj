@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\gachaCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\gachaCards.Designer.cs">
+      <DependentUpon>gachaCards.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Slots.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </Compile>
     <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\gachaCards.resx">
+      <DependentUpon>gachaCards.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Slots.resx">
       <DependentUpon>Slots.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +163,36 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_dark-old-wooden-table-texture-background-top-view_2923567.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCopperPackPlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_stationery-school-equipment_46975844.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_stationery-school-equipment_469758441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BinderPlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picIronPackPlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picCopperPackPlaceholder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picBronzePackPlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picSilverPackPlaceholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\picGoldPackPlaceholder.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dealer.png" />

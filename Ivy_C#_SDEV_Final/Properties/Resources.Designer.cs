@@ -63,6 +63,106 @@ namespace Ivy_C__SDEV_Final.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BinderPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("BinderPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picBronzePackPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("picBronzePackPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picCopperPackPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("picCopperPackPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picCopperPackPlaceholder1 {
+            get {
+                object obj = ResourceManager.GetObject("picCopperPackPlaceholder1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picGoldPackPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("picGoldPackPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picIronPackPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("picIronPackPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap picSilverPackPlaceholder {
+            get {
+                object obj = ResourceManager.GetObject("picSilverPackPlaceholder", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_dark_old_wooden_table_texture_background_top_view_2923567 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_dark-old-wooden-table-texture-background-top-view_2923567", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_stationery_school_equipment_46975844 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_stationery-school-equipment_46975844", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vecteezy_stationery_school_equipment_469758441 {
+            get {
+                object obj = ResourceManager.GetObject("vecteezy_stationery-school-equipment_469758441", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dealer {
             get {
                 object obj = ResourceManager.GetObject("dealer", resourceCulture);
