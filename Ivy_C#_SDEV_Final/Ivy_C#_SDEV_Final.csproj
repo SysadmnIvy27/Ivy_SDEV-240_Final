@@ -193,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\picGoldPackPlaceholder.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dealer.png" />
   </ItemGroup>
