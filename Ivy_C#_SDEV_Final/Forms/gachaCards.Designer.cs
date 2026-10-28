@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gachaCards));
             this.lblMainMenu = new System.Windows.Forms.Label();
             this.btnBuyCopper = new System.Windows.Forms.Button();
             this.btnBuyBronze = new System.Windows.Forms.Button();
@@ -54,7 +55,7 @@
             // lblMainMenu
             // 
             this.lblMainMenu.AutoSize = true;
-            this.lblMainMenu.Location = new System.Drawing.Point(40, 69);
+            this.lblMainMenu.Location = new System.Drawing.Point(40, 107);
             this.lblMainMenu.Name = "lblMainMenu";
             this.lblMainMenu.Size = new System.Drawing.Size(69, 13);
             this.lblMainMenu.TabIndex = 0;
@@ -183,12 +184,16 @@
             // 
             // btnMainMenu
             // 
+            this.btnMainMenu.BackColor = System.Drawing.Color.Transparent;
+            this.btnMainMenu.FlatAppearance.BorderSize = 0;
+            this.btnMainMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMainMenu.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnMainMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMainMenu.Image")));
             this.btnMainMenu.Location = new System.Drawing.Point(30, 23);
             this.btnMainMenu.Name = "btnMainMenu";
-            this.btnMainMenu.Size = new System.Drawing.Size(92, 42);
+            this.btnMainMenu.Size = new System.Drawing.Size(89, 81);
             this.btnMainMenu.TabIndex = 14;
-            this.btnMainMenu.Text = "Main menu arrow here";
-            this.btnMainMenu.UseVisualStyleBackColor = true;
+            this.btnMainMenu.UseVisualStyleBackColor = false;
             // 
             // lblUserName
             // 
