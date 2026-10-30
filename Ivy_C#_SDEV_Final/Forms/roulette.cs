@@ -16,6 +16,5 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             InitializeComponent();
         }
-
     }
 }
