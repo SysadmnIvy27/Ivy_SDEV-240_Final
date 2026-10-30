@@ -8,6 +8,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using page_classes;
 using System.Reflection;
 using System.Diagnostics;
+using Ivy_C__SDEV_Final.Forms;
 
 namespace Ivy_C__SDEV_Final
 {
@@ -25,7 +26,7 @@ namespace Ivy_C__SDEV_Final
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formLogin());
+            Application.Run(new frmMainMenu());
         }
     }
 }

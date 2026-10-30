@@ -38,11 +38,11 @@
             this.tpgGames = new System.Windows.Forms.TabPage();
             this.tpgMilestones = new System.Windows.Forms.TabPage();
             this.tpgUserInfo = new System.Windows.Forms.TabPage();
-            this.btnGame0 = new System.Windows.Forms.Button();
-            this.btnGame1 = new System.Windows.Forms.Button();
-            this.btnGame2 = new System.Windows.Forms.Button();
-            this.btnGame3 = new System.Windows.Forms.Button();
-            this.btnGame4 = new System.Windows.Forms.Button();
+            this.btnBlackjack = new System.Windows.Forms.Button();
+            this.btnGachaCards = new System.Windows.Forms.Button();
+            this.btnRoulette = new System.Windows.Forms.Button();
+            this.btnSlots = new System.Windows.Forms.Button();
+            this.btnTexasHoldEm = new System.Windows.Forms.Button();
             this.tctrlMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +81,7 @@
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // lblChipsDNU
             // 
@@ -141,61 +142,66 @@
             this.tpgUserInfo.Text = "User Info";
             this.tpgUserInfo.UseVisualStyleBackColor = true;
             // 
-            // btnGame0
+            // btnBlackjack
             // 
-            this.btnGame0.Location = new System.Drawing.Point(679, 74);
-            this.btnGame0.Name = "btnGame0";
-            this.btnGame0.Size = new System.Drawing.Size(75, 23);
-            this.btnGame0.TabIndex = 7;
-            this.btnGame0.Text = "Game0";
-            this.btnGame0.UseVisualStyleBackColor = true;
+            this.btnBlackjack.Location = new System.Drawing.Point(679, 74);
+            this.btnBlackjack.Name = "btnBlackjack";
+            this.btnBlackjack.Size = new System.Drawing.Size(90, 23);
+            this.btnBlackjack.TabIndex = 7;
+            this.btnBlackjack.Text = "Blackjack";
+            this.btnBlackjack.UseVisualStyleBackColor = true;
+            this.btnBlackjack.Click += new System.EventHandler(this.btnBlackjack_Click);
             // 
-            // btnGame1
+            // btnGachaCards
             // 
-            this.btnGame1.Location = new System.Drawing.Point(679, 103);
-            this.btnGame1.Name = "btnGame1";
-            this.btnGame1.Size = new System.Drawing.Size(75, 23);
-            this.btnGame1.TabIndex = 8;
-            this.btnGame1.Text = "Game1";
-            this.btnGame1.UseVisualStyleBackColor = true;
+            this.btnGachaCards.Location = new System.Drawing.Point(679, 103);
+            this.btnGachaCards.Name = "btnGachaCards";
+            this.btnGachaCards.Size = new System.Drawing.Size(90, 23);
+            this.btnGachaCards.TabIndex = 8;
+            this.btnGachaCards.Text = "Gacha Cards";
+            this.btnGachaCards.UseVisualStyleBackColor = true;
+            this.btnGachaCards.Click += new System.EventHandler(this.btnGachaCards_Click);
             // 
-            // btnGame2
+            // btnRoulette
             // 
-            this.btnGame2.Location = new System.Drawing.Point(679, 132);
-            this.btnGame2.Name = "btnGame2";
-            this.btnGame2.Size = new System.Drawing.Size(75, 23);
-            this.btnGame2.TabIndex = 9;
-            this.btnGame2.Text = "Game2";
-            this.btnGame2.UseVisualStyleBackColor = true;
+            this.btnRoulette.Location = new System.Drawing.Point(679, 132);
+            this.btnRoulette.Name = "btnRoulette";
+            this.btnRoulette.Size = new System.Drawing.Size(90, 23);
+            this.btnRoulette.TabIndex = 9;
+            this.btnRoulette.Text = "Roulette";
+            this.btnRoulette.UseVisualStyleBackColor = true;
+            this.btnRoulette.Click += new System.EventHandler(this.btnRoulette_Click);
             // 
-            // btnGame3
+            // btnSlots
             // 
-            this.btnGame3.Location = new System.Drawing.Point(679, 161);
-            this.btnGame3.Name = "btnGame3";
-            this.btnGame3.Size = new System.Drawing.Size(75, 23);
-            this.btnGame3.TabIndex = 10;
-            this.btnGame3.Text = "Game3";
-            this.btnGame3.UseVisualStyleBackColor = true;
+            this.btnSlots.Location = new System.Drawing.Point(679, 161);
+            this.btnSlots.Name = "btnSlots";
+            this.btnSlots.Size = new System.Drawing.Size(90, 23);
+            this.btnSlots.TabIndex = 10;
+            this.btnSlots.Text = "Slots";
+            this.btnSlots.UseVisualStyleBackColor = true;
+            this.btnSlots.Click += new System.EventHandler(this.btnSlots_Click);
             // 
-            // btnGame4
+            // btnTexasHoldEm
             // 
-            this.btnGame4.Location = new System.Drawing.Point(679, 190);
-            this.btnGame4.Name = "btnGame4";
-            this.btnGame4.Size = new System.Drawing.Size(75, 23);
-            this.btnGame4.TabIndex = 11;
-            this.btnGame4.Text = "Game4";
-            this.btnGame4.UseVisualStyleBackColor = true;
+            this.btnTexasHoldEm.Location = new System.Drawing.Point(679, 190);
+            this.btnTexasHoldEm.Name = "btnTexasHoldEm";
+            this.btnTexasHoldEm.Size = new System.Drawing.Size(90, 23);
+            this.btnTexasHoldEm.TabIndex = 11;
+            this.btnTexasHoldEm.Text = "Texas Hold Em\'";
+            this.btnTexasHoldEm.UseVisualStyleBackColor = true;
+            this.btnTexasHoldEm.Click += new System.EventHandler(this.btnTexasHoldEm_Click);
             // 
             // frmMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.btnGame4);
-            this.Controls.Add(this.btnGame3);
-            this.Controls.Add(this.btnGame2);
-            this.Controls.Add(this.btnGame1);
-            this.Controls.Add(this.btnGame0);
+            this.Controls.Add(this.btnTexasHoldEm);
+            this.Controls.Add(this.btnSlots);
+            this.Controls.Add(this.btnRoulette);
+            this.Controls.Add(this.btnGachaCards);
+            this.Controls.Add(this.btnBlackjack);
             this.Controls.Add(this.tctrlMenu);
             this.Controls.Add(this.lblChips);
             this.Controls.Add(this.lblChipsDNU);
@@ -205,6 +211,7 @@
             this.Controls.Add(this.btnLogin);
             this.Name = "frmMainMenu";
             this.Text = "mainmenu";
+            this.Load += new System.EventHandler(this.frmMainMenu_Load);
             this.tctrlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -223,10 +230,10 @@
         private System.Windows.Forms.TabPage tpgGames;
         private System.Windows.Forms.TabPage tpgMilestones;
         private System.Windows.Forms.TabPage tpgUserInfo;
-        private System.Windows.Forms.Button btnGame0;
-        private System.Windows.Forms.Button btnGame1;
-        private System.Windows.Forms.Button btnGame2;
-        private System.Windows.Forms.Button btnGame3;
-        private System.Windows.Forms.Button btnGame4;
+        private System.Windows.Forms.Button btnBlackjack;
+        private System.Windows.Forms.Button btnGachaCards;
+        private System.Windows.Forms.Button btnRoulette;
+        private System.Windows.Forms.Button btnSlots;
+        private System.Windows.Forms.Button btnTexasHoldEm;
     }
 }
