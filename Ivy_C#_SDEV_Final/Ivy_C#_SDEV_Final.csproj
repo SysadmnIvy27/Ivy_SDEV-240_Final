@@ -91,6 +91,12 @@
     <Compile Include="Forms\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\roulette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\roulette.Designer.cs">
+      <DependentUpon>roulette.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\mainmenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\login.resx">
       <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\roulette.resx">
+      <DependentUpon>roulette.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\mainmenu.resx">
       <DependentUpon>mainmenu.cs</DependentUpon>
