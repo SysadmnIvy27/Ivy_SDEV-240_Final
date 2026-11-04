@@ -38,7 +38,7 @@
             this.btnInsurance = new System.Windows.Forms.Button();
             this.btnDouble = new System.Windows.Forms.Button();
             this.btnSplit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDealerStand
@@ -83,9 +83,8 @@
             this.lblPlayer.Location = new System.Drawing.Point(543, 398);
             this.lblPlayer.MinimumSize = new System.Drawing.Size(0, 52);
             this.lblPlayer.Name = "lblPlayer";
-            this.lblPlayer.Size = new System.Drawing.Size(194, 52);
+            this.lblPlayer.Size = new System.Drawing.Size(0, 52);
             this.lblPlayer.TabIndex = 3;
-            this.lblPlayer.Text = "5♠, A♠";
             // 
             // btnHit
             // 
@@ -132,16 +131,17 @@
             this.btnSplit.Text = "Split";
             this.btnSplit.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.ForeColor = System.Drawing.Color.Transparent;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 75);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBack.BackColor = System.Drawing.Color.Transparent;
+            this.btnBack.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBack.BackgroundImage")));
+            this.btnBack.ForeColor = System.Drawing.Color.Transparent;
+            this.btnBack.Location = new System.Drawing.Point(12, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(75, 75);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.Button1_Click);
             // 
             // BlackJackForm
             // 
@@ -149,7 +149,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSplit);
             this.Controls.Add(this.btnDouble);
             this.Controls.Add(this.btnInsurance);
@@ -177,6 +177,6 @@
         private System.Windows.Forms.Button btnInsurance;
         private System.Windows.Forms.Button btnDouble;
         private System.Windows.Forms.Button btnSplit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnBack;
     }
 }

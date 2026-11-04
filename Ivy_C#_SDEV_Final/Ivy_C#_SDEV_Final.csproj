@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\GenerateCards.cs" />
     <Compile Include="Forms\gachaCards.cs">
       <SubType>Form</SubType>
     </Compile>
