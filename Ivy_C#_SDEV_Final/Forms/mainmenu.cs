@@ -12,6 +12,7 @@ namespace Ivy_C__SDEV_Final.Forms
 {
     public partial class frmMainMenu : Form
     {
+        public formLogin LoginForm = new formLogin();
         public frmMainMenu()
         {
             InitializeComponent();
@@ -35,8 +36,10 @@ namespace Ivy_C__SDEV_Final.Forms
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
-            Form LoginForm = new formLogin();
-            LoginForm.Show();
+            btnLogin.Enabled = false;
+            LoginForm.Show(); 
+            lblChips.Text = Convert.ToString(Program.chips);
+            lblUsername.Text = Convert.ToString(Program.username);
         }
 
         private void btnBlackjack_Click(object sender, EventArgs e)
