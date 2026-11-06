@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,7 +13,6 @@ namespace Ivy_C__SDEV_Final.Forms
 {
     public partial class frmMainMenu : Form
     {
-        public formLogin LoginForm = new formLogin();
         public frmMainMenu()
         {
             InitializeComponent();
@@ -36,40 +36,51 @@ namespace Ivy_C__SDEV_Final.Forms
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
+            formLogin LoginForm = new formLogin(/*this*/);
             btnLogin.Enabled = false;
-            LoginForm.Show(); 
+            LoginForm.Show();
             lblChips.Text = Convert.ToString(Program.chips);
             lblUsername.Text = Convert.ToString(Program.username);
         }
 
         private void btnBlackjack_Click(object sender, EventArgs e)
         {
-            Form Blackjack = new BlackJackForm();
+            BlackJackForm Blackjack = new BlackJackForm(/*this*/);
+            //this.Hide();
             Blackjack.Show();
         }
 
         private void btnGachaCards_Click(object sender, EventArgs e)
         {
-            Form Gacha = new gachaCards();
+            gachaCards Gacha = new gachaCards(/*this*/);
+            //this.Hide();
             Gacha.Show();
         }
 
         private void btnRoulette_Click(object sender, EventArgs e)
         {
-            Form Roulette = new roulette();
+            roulette Roulette = new roulette(/*this*/);
+            //this.Hide();
             Roulette.Show();
         }
 
         private void btnSlots_Click(object sender, EventArgs e)
         {
-            Form Slots = new Slots();
+            Slots Slots = new Slots(/*this*/);
+            //this.Hide();
             Slots.Show();
         }
 
         private void btnTexasHoldEm_Click(object sender, EventArgs e)
         {
-            Form Texas = new texas_Holdem();
+            texas_Holdem Texas = new texas_Holdem(/*this*/);
+            //this.Hide();
             Texas.Show();
+        }
+
+        private void frmMainMenu_Shown(object sender, EventArgs e)
+        {
+            //this.Hide();
         }
     }
 }

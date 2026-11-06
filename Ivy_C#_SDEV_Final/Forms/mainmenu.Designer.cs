@@ -212,6 +212,7 @@
             this.Name = "frmMainMenu";
             this.Text = "mainmenu";
             this.Load += new System.EventHandler(this.frmMainMenu_Load);
+            this.Shown += new System.EventHandler(this.frmMainMenu_Shown);
             this.tctrlMenu.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
