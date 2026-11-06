@@ -69,6 +69,7 @@
             this.btnBuyCopper.TabIndex = 1;
             this.btnBuyCopper.Text = "Buy Pack";
             this.btnBuyCopper.UseVisualStyleBackColor = true;
+            this.btnBuyCopper.Click += new System.EventHandler(this.btnBuyCopper_Click);
             // 
             // btnBuyBronze
             // 

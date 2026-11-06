@@ -16,5 +16,10 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             InitializeComponent();
         }
+
+        private void btnBuyCopper_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
