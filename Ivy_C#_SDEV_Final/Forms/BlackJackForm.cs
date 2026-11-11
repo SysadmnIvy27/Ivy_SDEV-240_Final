@@ -14,10 +14,26 @@ namespace Ivy_C__SDEV_Final.Forms
     public partial class BlackJackForm : Form
     {
         public GenerateCards CardGen = new GenerateCards();
-        public BlackJackForm()
+        public Form MenuForm = null;
+
+        public BlackJackForm(/*Form form*/)
         {
             InitializeComponent();
+            //MenuForm = form;
         }
         private void Button1_Click(object sender, EventArgs e) => lblPlayer.Text = CardGen.GenerateCard(); //Back Button
+
+
+
+        private void BlackJackForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //MenuForm.Show();
+        }
+
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            lblPlayer.Text = $"{CardGen.GenerateCard()}, {CardGen.GenerateCard()}";
+            lblDealer.Text = $"?, {CardGen.GenerateCard()}";
+        }
     }
 }

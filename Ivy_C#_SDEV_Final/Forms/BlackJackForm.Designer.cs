@@ -39,6 +39,7 @@
             this.btnDouble = new System.Windows.Forms.Button();
             this.btnSplit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblDealerStand
@@ -106,7 +107,7 @@
             // 
             // btnInsurance
             // 
-            this.btnInsurance.Location = new System.Drawing.Point(602, 595);
+            this.btnInsurance.Location = new System.Drawing.Point(602, 516);
             this.btnInsurance.Name = "btnInsurance";
             this.btnInsurance.Size = new System.Drawing.Size(76, 23);
             this.btnInsurance.TabIndex = 6;
@@ -143,12 +144,23 @@
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // btnStart
+            // 
+            this.btnStart.Location = new System.Drawing.Point(602, 574);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(76, 23);
+            this.btnStart.TabIndex = 10;
+            this.btnStart.Text = "Start Game";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
+            // 
             // BlackJackForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnSplit);
             this.Controls.Add(this.btnDouble);
@@ -161,6 +173,7 @@
             this.Controls.Add(this.lblDealerStand);
             this.Name = "BlackJackForm";
             this.Text = "BlackJackForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BlackJackForm_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +191,6 @@
         private System.Windows.Forms.Button btnDouble;
         private System.Windows.Forms.Button btnSplit;
         private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnStart;
     }
 }
