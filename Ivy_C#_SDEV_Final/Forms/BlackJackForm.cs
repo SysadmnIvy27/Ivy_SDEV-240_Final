@@ -34,6 +34,7 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             lblPlayer.Text = $"{CardGen.GenerateCard()}, {CardGen.GenerateCard()}";
             lblDealer.Text = $"?, {CardGen.GenerateCard()}";
+            CardGen.ResetDeck();
         }
     }
 }
