@@ -68,11 +68,11 @@
     <Compile Include="Forms\gachaCards.Designer.cs">
       <DependentUpon>gachaCards.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\gatchaCardsBinder.cs">
+    <Compile Include="Forms\gachaCardsBinder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\gatchaCardsBinder.Designer.cs">
-      <DependentUpon>gatchaCardsBinder.cs</DependentUpon>
+    <Compile Include="Forms\gachaCardsBinder.Designer.cs">
+      <DependentUpon>gachaCardsBinder.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Slots.cs">
       <SubType>Form</SubType>
@@ -127,8 +127,8 @@
     <EmbeddedResource Include="Forms\gachaCards.resx">
       <DependentUpon>gachaCards.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\gatchaCardsBinder.resx">
-      <DependentUpon>gatchaCardsBinder.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\gachaCardsBinder.resx">
+      <DependentUpon>gachaCardsBinder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Slots.resx">
       <DependentUpon>Slots.cs</DependentUpon>

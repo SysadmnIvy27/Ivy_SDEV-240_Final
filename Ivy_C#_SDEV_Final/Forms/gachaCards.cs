@@ -12,14 +12,104 @@ namespace Ivy_C__SDEV_Final.Forms
 {
     public partial class gachaCards : Form
     {
+        private int userChips = 10000; // Example value, replace with actual user chips value later on
+        private string userName_standin = "Mr. Guy";
+        public int UserChips
+        {
+            get { return userChips; }
+            set
+            {
+                userChips = value;
+                lblUserMoney.Text = $"Chips: {userChips}";
+            }
+        }
+
         public gachaCards()
         {
             InitializeComponent();
+            lblUserMoney.Text = $"Chips: {UserChips}";
+            lblUserName.Text = $"{userName_standin}";
+
         }
+
+        // Right now, buttons just subtract price, but else if doesn't do anything at the moment.
 
         private void btnBuyCopper_Click(object sender, EventArgs e)
         {
-            
+            if (UserChips >= 250)
+            {
+                int UserChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
+                UserChips -= 250; // probably setting this to the local variable instead, fix this later
+                lblUserMoney.Text = $"Chips: {UserChips}";
+            }
+            else if (UserChips < 250)
+            {
+                MessageBox.Show("Insufficient chips.");
+            }
+        }
+
+        private void btnBuyIron_Click(object sender, EventArgs e)
+        {
+            if (UserChips >= 500)
+            {
+                int UserChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
+                UserChips -= 500;
+                lblUserMoney.Text = $"Chips: {UserChips}";
+            }
+            else if (UserChips < 500)
+            {
+                MessageBox.Show("Insufficient chips.");
+            }
+        }
+
+        private void btnBuyBronze_Click(object sender, EventArgs e)
+        {
+            if (UserChips >= 1000)
+            {
+                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
+                userChips -= 1000;
+                lblUserMoney.Text = $"Chips: {userChips}";
+            }
+            else if (UserChips < 1000)
+            {
+                MessageBox.Show("Insufficient chips.");
+            }
+        }
+
+        private void btnBuySilver_Click(object sender, EventArgs e)
+        {
+            if (UserChips >= 2000)
+            {
+                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
+                userChips -= 2000;
+                lblUserMoney.Text = $"Chips: {userChips}";
+            }
+            else if(UserChips < 2000)
+            {
+                MessageBox.Show("Insufficient chips.");
+            }
+        }
+
+        private void btnBuyGold_Click(object sender, EventArgs e)
+        {
+            if (UserChips >= 4000)
+            {
+                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
+                userChips -= 4000;
+                lblUserMoney.Text = $"Chips: {userChips}";
+            }
+            else if (UserChips < 4000)
+            {
+                MessageBox.Show("Insufficient chips.");
+            }
+        }
+
+        private void btnViewBinder_Click(object sender, EventArgs e)
+        {
+            gachaCardsBinder binderForm = new gachaCardsBinder();
+            binderForm.Owner = this; // Set the owner of the binder form to the current gachaCards form
+            binderForm.Show();
+            this.Hide();
         }
     }
 }

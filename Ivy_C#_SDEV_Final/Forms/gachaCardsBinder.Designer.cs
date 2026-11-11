@@ -1,6 +1,6 @@
 ﻿namespace Ivy_C__SDEV_Final.Forms
 {
-    partial class gatchaCardsBinder
+    partial class gachaCardsBinder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gatchaCardsBinder));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(gachaCardsBinder));
             this.cardDisplayPanel = new System.Windows.Forms.TableLayoutPanel();
             this.btnBackToGacha = new System.Windows.Forms.Button();
             this.lblBackToGacha = new System.Windows.Forms.Label();
@@ -64,6 +64,7 @@
             this.btnBackToGacha.Size = new System.Drawing.Size(89, 81);
             this.btnBackToGacha.TabIndex = 15;
             this.btnBackToGacha.UseVisualStyleBackColor = false;
+            this.btnBackToGacha.Click += new System.EventHandler(this.btnBackToGacha_Click);
             // 
             // lblBackToGacha
             // 
@@ -92,7 +93,7 @@
             this.lblUserMoney.TabIndex = 18;
             this.lblUserMoney.Text = "Chips: $ Money";
             // 
-            // gatchaCardsBinder
+            // gachaCardsBinder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -104,8 +105,8 @@
             this.Controls.Add(this.btnBackToGacha);
             this.Controls.Add(this.cardDisplayPanel);
             this.DoubleBuffered = true;
-            this.Name = "gatchaCardsBinder";
-            this.Text = "gatchaCardsBinder";
+            this.Name = "gachaCardsBinder";
+            this.Text = "gachaCardsBinder";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace Ivy_C__SDEV_Final.Forms
 {
-    public partial class gatchaCardsBinder : Form
+    public partial class gachaCardsBinder : Form
     {
-        public gatchaCardsBinder()
+        public gachaCardsBinder()
         {
             InitializeComponent();
+        }
+
+        private void btnBackToGacha_Click(object sender, EventArgs e)
+        { 
+            this.Owner.Show();
+            this.Close();
         }
     }
 }

@@ -79,6 +79,7 @@
             this.btnBuyBronze.TabIndex = 2;
             this.btnBuyBronze.Text = "Buy Pack";
             this.btnBuyBronze.UseVisualStyleBackColor = true;
+            this.btnBuyBronze.Click += new System.EventHandler(this.btnBuyBronze_Click);
             // 
             // btnBuyIron
             // 
@@ -88,6 +89,7 @@
             this.btnBuyIron.TabIndex = 3;
             this.btnBuyIron.Text = "Buy Pack";
             this.btnBuyIron.UseVisualStyleBackColor = true;
+            this.btnBuyIron.Click += new System.EventHandler(this.btnBuyIron_Click);
             // 
             // btnBuySilver
             // 
@@ -97,6 +99,7 @@
             this.btnBuySilver.TabIndex = 4;
             this.btnBuySilver.Text = "Buy Pack";
             this.btnBuySilver.UseVisualStyleBackColor = true;
+            this.btnBuySilver.Click += new System.EventHandler(this.btnBuySilver_Click);
             // 
             // btnBuyGold
             // 
@@ -106,6 +109,7 @@
             this.btnBuyGold.TabIndex = 5;
             this.btnBuyGold.Text = "Buy Pack";
             this.btnBuyGold.UseVisualStyleBackColor = true;
+            this.btnBuyGold.Click += new System.EventHandler(this.btnBuyGold_Click);
             // 
             // picCopperPack
             // 
@@ -175,6 +179,8 @@
             // 
             this.btnViewBinder.BackColor = System.Drawing.Color.Transparent;
             this.btnViewBinder.FlatAppearance.BorderSize = 0;
+            this.btnViewBinder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnViewBinder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnViewBinder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewBinder.Image = global::Ivy_C__SDEV_Final.Properties.Resources.BinderPlaceholder;
             this.btnViewBinder.Location = new System.Drawing.Point(-21, 515);
@@ -182,6 +188,7 @@
             this.btnViewBinder.Size = new System.Drawing.Size(235, 219);
             this.btnViewBinder.TabIndex = 13;
             this.btnViewBinder.UseVisualStyleBackColor = false;
+            this.btnViewBinder.Click += new System.EventHandler(this.btnViewBinder_Click);
             // 
             // btnMainMenu
             // 
@@ -210,9 +217,9 @@
             this.lblUserMoney.AutoSize = true;
             this.lblUserMoney.Location = new System.Drawing.Point(1144, 23);
             this.lblUserMoney.Name = "lblUserMoney";
-            this.lblUserMoney.Size = new System.Drawing.Size(80, 13);
+            this.lblUserMoney.Size = new System.Drawing.Size(57, 13);
             this.lblUserMoney.TabIndex = 16;
-            this.lblUserMoney.Text = "Chips: $ Money";
+            this.lblUserMoney.Text = "Chips: 100";
             // 
             // gachaCards
             // 
