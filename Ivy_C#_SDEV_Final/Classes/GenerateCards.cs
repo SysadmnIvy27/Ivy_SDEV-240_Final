@@ -14,11 +14,12 @@ namespace Ivy_C__SDEV_Final.Classes
         public List<String> clubCards = new List<String>() { "A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K" };
         public List<String> heartCards = new List<String>() { "A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K" };
         public List<String> diamondCards = new List<String>() { "A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K" };
-        public string GenerateCard()
+        public Tuple<int, string> GenerateCard()
         {
             var v = 0;
             var value = "0";
             int suit = rnd.Next(4);
+            int valueInt = 0;
             if (suit == 0)
             {
                 if (spadeCards.Count == 0)
@@ -29,8 +30,11 @@ namespace Ivy_C__SDEV_Final.Classes
                 value = spadeCards[v];
                 spadeCards.RemoveAt(v);
                 if (value == "0"){
-                    value = "10"; }
-                return $"{value}♠";
+                    value = "10";
+                }
+                string card = $"{value}♠";
+                valueInt = convertToInt(value);
+                return Tuple.Create(valueInt, card);
             }
             else if (suit == 1)
             {
@@ -45,7 +49,9 @@ namespace Ivy_C__SDEV_Final.Classes
                 {
                     value = "10";
                 }
-                return $"{value}♣";
+                string card = $"{value}♣";
+                valueInt = convertToInt(value);
+                return Tuple.Create(valueInt, card);
             }
             else if (suit == 2)
             {
@@ -60,7 +66,9 @@ namespace Ivy_C__SDEV_Final.Classes
                 {
                     value = "10";
                 }
-                return $"{value}♥";
+                string card = $"{value}♥";
+                valueInt = convertToInt(value);
+                return Tuple.Create(valueInt, card);
             }
             else if (suit == 3)
             {
@@ -75,7 +83,9 @@ namespace Ivy_C__SDEV_Final.Classes
                 {
                     value = "10";
                 }
-                return $"{value}♦";
+                string card = $"{value}♦";
+                valueInt = convertToInt(value);
+                return Tuple.Create(valueInt, card);
             }
             else return null;
         }
@@ -85,6 +95,21 @@ namespace Ivy_C__SDEV_Final.Classes
             clubCards = new List<string> {"A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"};
             heartCards = new List<string> {"A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"};
             diamondCards = new List<string> {"A", "2", "3", "4", "5", "6", "7", "8", "9", "0", "J", "Q", "K"};
+        }
+        private int convertToInt(string value)
+        {
+            if (int.TryParse(value, out int i))
+            {
+                return i;
+            }
+            else if (value == "A")
+            {
+                return 11;
+            }
+            else
+            {
+                return 10;
+            }
         }
     }
 }
