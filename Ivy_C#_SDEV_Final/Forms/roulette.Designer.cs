@@ -137,8 +137,9 @@
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(105, 21);
             this.btnStart.TabIndex = 5;
-            this.btnStart.Text = "Start";
+            this.btnStart.Text = "Spin";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // pictWheel
             // 
@@ -217,7 +218,7 @@
             // 
             // btn13
             // 
-            this.btn13.BackColor = System.Drawing.Color.Red;
+            this.btn13.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn13.ForeColor = System.Drawing.SystemColors.Control;
             this.btn13.Location = new System.Drawing.Point(400, 436);
             this.btn13.Name = "btn13";
@@ -250,7 +251,7 @@
             // 
             // btn14
             // 
-            this.btn14.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn14.BackColor = System.Drawing.Color.Red;
             this.btn14.ForeColor = System.Drawing.SystemColors.Control;
             this.btn14.Location = new System.Drawing.Point(460, 436);
             this.btn14.Name = "btn14";
@@ -294,7 +295,7 @@
             // 
             // btn15
             // 
-            this.btn15.BackColor = System.Drawing.Color.Red;
+            this.btn15.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn15.ForeColor = System.Drawing.SystemColors.Control;
             this.btn15.Location = new System.Drawing.Point(524, 436);
             this.btn15.Name = "btn15";
@@ -316,7 +317,7 @@
             // 
             // btn16
             // 
-            this.btn16.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn16.BackColor = System.Drawing.Color.Red;
             this.btn16.ForeColor = System.Drawing.SystemColors.Control;
             this.btn16.Location = new System.Drawing.Point(592, 436);
             this.btn16.Name = "btn16";
@@ -349,7 +350,7 @@
             // 
             // btn11
             // 
-            this.btn11.BackColor = System.Drawing.Color.Red;
+            this.btn11.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn11.ForeColor = System.Drawing.SystemColors.Control;
             this.btn11.Location = new System.Drawing.Point(658, 394);
             this.btn11.Name = "btn11";
@@ -360,7 +361,7 @@
             // 
             // btn17
             // 
-            this.btn17.BackColor = System.Drawing.Color.Red;
+            this.btn17.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn17.ForeColor = System.Drawing.SystemColors.Control;
             this.btn17.Location = new System.Drawing.Point(658, 436);
             this.btn17.Name = "btn17";
@@ -393,7 +394,7 @@
             // 
             // btn12
             // 
-            this.btn12.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn12.BackColor = System.Drawing.Color.Red;
             this.btn12.ForeColor = System.Drawing.SystemColors.Control;
             this.btn12.Location = new System.Drawing.Point(724, 394);
             this.btn12.Name = "btn12";
@@ -415,7 +416,7 @@
             // 
             // btn18
             // 
-            this.btn18.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn18.BackColor = System.Drawing.Color.Red;
             this.btn18.ForeColor = System.Drawing.SystemColors.Control;
             this.btn18.Location = new System.Drawing.Point(724, 436);
             this.btn18.Name = "btn18";
@@ -470,7 +471,7 @@
             // 
             // btn29
             // 
-            this.btn29.BackColor = System.Drawing.Color.Red;
+            this.btn29.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn29.ForeColor = System.Drawing.SystemColors.Control;
             this.btn29.Location = new System.Drawing.Point(658, 514);
             this.btn29.Name = "btn29";
@@ -481,7 +482,7 @@
             // 
             // btn30
             // 
-            this.btn30.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn30.BackColor = System.Drawing.Color.Red;
             this.btn30.ForeColor = System.Drawing.SystemColors.Control;
             this.btn30.Location = new System.Drawing.Point(724, 516);
             this.btn30.Name = "btn30";
@@ -514,7 +515,7 @@
             // 
             // btn31
             // 
-            this.btn31.BackColor = System.Drawing.Color.Red;
+            this.btn31.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn31.ForeColor = System.Drawing.SystemColors.Control;
             this.btn31.Location = new System.Drawing.Point(400, 556);
             this.btn31.Name = "btn31";
@@ -525,7 +526,7 @@
             // 
             // btn32
             // 
-            this.btn32.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn32.BackColor = System.Drawing.Color.Red;
             this.btn32.ForeColor = System.Drawing.SystemColors.Control;
             this.btn32.Location = new System.Drawing.Point(460, 556);
             this.btn32.Name = "btn32";
@@ -536,7 +537,7 @@
             // 
             // btn33
             // 
-            this.btn33.BackColor = System.Drawing.Color.Red;
+            this.btn33.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn33.ForeColor = System.Drawing.SystemColors.Control;
             this.btn33.Location = new System.Drawing.Point(526, 556);
             this.btn33.Name = "btn33";
@@ -547,7 +548,7 @@
             // 
             // btn34
             // 
-            this.btn34.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn34.BackColor = System.Drawing.Color.Red;
             this.btn34.ForeColor = System.Drawing.SystemColors.Control;
             this.btn34.Location = new System.Drawing.Point(592, 556);
             this.btn34.Name = "btn34";
@@ -558,7 +559,7 @@
             // 
             // btn35
             // 
-            this.btn35.BackColor = System.Drawing.Color.Red;
+            this.btn35.BackColor = System.Drawing.SystemColors.Desktop;
             this.btn35.ForeColor = System.Drawing.SystemColors.Control;
             this.btn35.Location = new System.Drawing.Point(658, 556);
             this.btn35.Name = "btn35";
@@ -569,7 +570,7 @@
             // 
             // btn36
             // 
-            this.btn36.BackColor = System.Drawing.SystemColors.Desktop;
+            this.btn36.BackColor = System.Drawing.Color.Red;
             this.btn36.ForeColor = System.Drawing.SystemColors.Control;
             this.btn36.Location = new System.Drawing.Point(724, 558);
             this.btn36.Name = "btn36";
@@ -681,6 +682,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.btn19_36);
             this.Controls.Add(this.btn1_18);
