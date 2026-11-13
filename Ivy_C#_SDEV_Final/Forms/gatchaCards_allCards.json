@@ -1,0 +1,56 @@
+[
+    {
+        "cardValue": 100,
+        "cardIDNum": 1,
+        "cardImageFilePath": "fillercardpath",
+        "copperWeight": 80,
+        "ironWeight": 70,
+        "bronzeWeight": 20,
+        "silverWeight": 10,
+        "goldWeight": 0.5
+    },
+
+    {
+        "cardValue": 50,
+        "cardIDNum": 2,
+        "cardImageFilePath": "fillercardpath",
+        "copperWeight": 70,
+        "ironWeight": 60,
+        "bronzeWeight": 15,
+        "silverWeight": 0.5,
+        "goldWeight": 0
+    },
+
+    {
+        "cardValue": 125,
+        "cardIDNum": 3,
+        "cardImageFilePath": "fillercardpath",
+        "copperWeight": 50,
+        "ironWeight": 60,
+        "bronzeWeight": 70,
+        "silverWeight": 75,
+        "goldWeight": 80
+    },
+
+    {
+        "cardValue": 200,
+        "cardIDNum": 4,
+        "cardImageFilePath": "fillercardpath",
+        "copperWeight": 40,
+        "ironWeight": 60,
+        "bronzeWeight": 70,
+        "silverWeight": 75,
+        "goldWeight": 80
+    },
+
+    {
+        "cardValue": 300,
+        "cardIDNum": 5,
+        "cardImageFilePath": "fillercardpath",
+        "copperWeight": 30,
+        "ironWeight": 40,
+        "bronzeWeight": 40,
+        "silverWeight": 40,
+        "goldWeight": 50
+    }
+]

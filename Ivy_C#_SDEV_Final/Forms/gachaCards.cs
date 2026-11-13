@@ -12,6 +12,7 @@ namespace Ivy_C__SDEV_Final.Forms
 {
     public partial class gachaCards : Form
     {
+        string jsonCardsPath = "JsonFilePathHere"; // May not need this. May hard bake the cards into program and just use json for individual user data. 
         private int userChips = 10000; // Example value, replace with actual user chips value later on
         private string userName_standin = "Mr. Guy";
         public int UserChips
@@ -38,8 +39,7 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             if (UserChips >= 250)
             {
-                int UserChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
-                UserChips -= 250; // probably setting this to the local variable instead, fix this later
+                UserChips -= 250;
                 lblUserMoney.Text = $"Chips: {UserChips}";
             }
             else if (UserChips < 250)
@@ -52,7 +52,6 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             if (UserChips >= 500)
             {
-                int UserChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
                 UserChips -= 500;
                 lblUserMoney.Text = $"Chips: {UserChips}";
             }
@@ -66,7 +65,6 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             if (UserChips >= 1000)
             {
-                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
                 userChips -= 1000;
                 lblUserMoney.Text = $"Chips: {userChips}";
             }
@@ -80,7 +78,6 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             if (UserChips >= 2000)
             {
-                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
                 userChips -= 2000;
                 lblUserMoney.Text = $"Chips: {userChips}";
             }
@@ -94,7 +91,6 @@ namespace Ivy_C__SDEV_Final.Forms
         {
             if (UserChips >= 4000)
             {
-                int userChips = int.Parse(lblUserMoney.Text.Replace("Chips: ", ""));
                 userChips -= 4000;
                 lblUserMoney.Text = $"Chips: {userChips}";
             }
@@ -111,5 +107,6 @@ namespace Ivy_C__SDEV_Final.Forms
             binderForm.Show();
             this.Hide();
         }
+
     }
 }
