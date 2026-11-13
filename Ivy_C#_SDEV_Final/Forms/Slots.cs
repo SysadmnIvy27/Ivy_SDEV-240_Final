@@ -142,7 +142,7 @@ namespace Ivy_C__SDEV_Final.Forms
                 else
                 {
                     SpinButton.Enabled = false;
-                    MessageBox.Show("GAME OVER! You ran out of chips!");
+                    MessageBox.Show("You ran out of chips!");
                 }
 
                 UpdateMoney();
@@ -181,7 +181,7 @@ namespace Ivy_C__SDEV_Final.Forms
             foreach (Form form in Application.OpenForms)
             {
                 if (form != this &&
-                    form.GetType().Name == "MainMenu")
+                    form.GetType().Name == "mainmenu")
                 {
                     form.Show();
                     this.Close();

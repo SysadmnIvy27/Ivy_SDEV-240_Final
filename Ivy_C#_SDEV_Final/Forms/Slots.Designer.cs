@@ -137,6 +137,9 @@
             this.ListOfIcons.Images.SetKeyName(3, "seven.png");
             this.ListOfIcons.Images.SetKeyName(4, "bar.png");
             this.ListOfIcons.Images.SetKeyName(5, "luck.png");
+            this.ListOfIcons.Images.SetKeyName(6, "diamond.png");
+            this.ListOfIcons.Images.SetKeyName(7, "lemon.png");
+            this.ListOfIcons.Images.SetKeyName(8, "horshoe.png");
             // 
             // Background
             // 
