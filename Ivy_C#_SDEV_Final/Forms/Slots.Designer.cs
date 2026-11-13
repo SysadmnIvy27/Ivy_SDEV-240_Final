@@ -39,6 +39,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.ListOfIcons = new System.Windows.Forms.ImageList(this.components);
             this.Background = new System.Windows.Forms.PictureBox();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.MoneySlider)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,9 +86,12 @@
             // 
             this.MoneySlider.BackColor = System.Drawing.SystemColors.Control;
             this.MoneySlider.Location = new System.Drawing.Point(140, 323);
+            this.MoneySlider.Maximum = 200;
+            this.MoneySlider.Minimum = 5;
             this.MoneySlider.Name = "MoneySlider";
             this.MoneySlider.Size = new System.Drawing.Size(104, 45);
             this.MoneySlider.TabIndex = 3;
+            this.MoneySlider.Value = 5;
             this.MoneySlider.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // pictureBox1
@@ -130,6 +134,12 @@
             this.ListOfIcons.Images.SetKeyName(0, "Bell.png");
             this.ListOfIcons.Images.SetKeyName(1, "Plum.png");
             this.ListOfIcons.Images.SetKeyName(2, "Cherry.png");
+            this.ListOfIcons.Images.SetKeyName(3, "seven.png");
+            this.ListOfIcons.Images.SetKeyName(4, "bar.png");
+            this.ListOfIcons.Images.SetKeyName(5, "luck.png");
+            this.ListOfIcons.Images.SetKeyName(6, "diamond.png");
+            this.ListOfIcons.Images.SetKeyName(7, "lemon.png");
+            this.ListOfIcons.Images.SetKeyName(8, "horshoe.png");
             // 
             // Background
             // 
@@ -140,13 +150,18 @@
             this.Background.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.Background.TabIndex = 7;
             this.Background.TabStop = false;
+            this.Background.Click += new System.EventHandler(this.Background_Click);
+            // 
+            // backgroundWorker1
+            // 
+            this.backgroundWorker1.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
             // Slots
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(389, 417);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -180,5 +195,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ImageList ListOfIcons;
         private System.Windows.Forms.PictureBox Background;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
