@@ -18,7 +18,9 @@ namespace Ivy_C__SDEV_Final.Forms
         public Form MenuForm = null;
         public int playerScore = 0;
         public int dealerScore = 0;
-        private object currCard;
+        public bool Ace = true;
+        public int aces = 0;
+        public bool gameOver = false;
 
         public BlackJackForm(/*Form form*/)
         {
@@ -40,14 +42,15 @@ namespace Ivy_C__SDEV_Final.Forms
             dealerScore = 0;
             CardGen.ResetDeck();
             Tuple <int, string> currCard = CardGen.GenerateCard();
-            playerScore += currCard.Item1;
+            playerScore += fixCard(currCard);
             lblPlayer.Text = currCard.Item2;
             currCard = CardGen.GenerateCard();
-            playerScore += currCard.Item1;
+            playerScore += fixCard(currCard);
             lblPlayer.Text += $", {currCard.Item2}";
             currCard = CardGen.GenerateCard();
-            dealerScore += currCard.Item1;
+            dealerScore += fixCard(currCard);
             lblDealer.Text = $"?, {currCard.Item2}";
+            gameOver = false;
         }
         private void end_game()
         {
@@ -82,18 +85,19 @@ namespace Ivy_C__SDEV_Final.Forms
             {
                 lblWinnings.Text = $"You lost {txtBet.Value} chip(s)!";
             }
+            gameOver = true;
         }
         private void stand()
         {
             if (playerScore <= 21)
             {
                 Tuple<int, string> currCard = CardGen.GenerateCard();
-                dealerScore += currCard.Item1;
+                dealerScore += fixCard(currCard);
                 lblDealer.Text = lblDealer.Text.Replace("?", currCard.Item2);
                 while (dealerScore < 17)
                 {
                     currCard = CardGen.GenerateCard();
-                    dealerScore += currCard.Item1;
+                    dealerScore += fixCard(currCard);
                     lblDealer.Text += $", {currCard.Item2}";
                 }
             }
@@ -107,12 +111,47 @@ namespace Ivy_C__SDEV_Final.Forms
 
         private void btnHit_Click(object sender, EventArgs e)
         {
-            Tuple<int, string> currCard = CardGen.GenerateCard();
-            playerScore += currCard.Item1;
-            lblPlayer.Text += $", {currCard.Item2}";
-            if (playerScore >= 21)
+            if (!gameOver)
             {
-                stand();
+                Tuple<int, string> currCard = CardGen.GenerateCard();
+                playerScore += fixCard(currCard);
+                lblPlayer.Text += $", {currCard.Item2}";
+                if (playerScore >= 21)
+                {
+                    string check = lblPlayer.Text;
+                    if (check.Contains("A") && Ace)
+                    {
+                        playerScore -= 10;
+                        aces -= 1;
+                        if (aces == 0)
+                        {
+                            Ace = false;
+                        }
+                    }
+                    else
+                    {
+                        stand();
+                    }
+                }
+            }
+        }
+        private int fixCard(Tuple<int, string> card)
+        {
+            if (card.Item1 > 10)
+            {
+                if (card.Item1 == 14)
+                {
+                    aces += 1;
+                    return 11;
+                }
+                else
+                {
+                    return 10;
+                }
+            }
+            else
+            {
+                return card.Item1;
             }
         }
     }
