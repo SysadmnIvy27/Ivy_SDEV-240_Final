@@ -68,6 +68,7 @@
             this.btnGuest.TabIndex = 3;
             this.btnGuest.Text = "Login as Guest";
             this.btnGuest.UseVisualStyleBackColor = true;
+            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
             // 
             // formLogin
             // 
@@ -80,6 +81,7 @@
             this.Controls.Add(this.lblLogin);
             this.Name = "formLogin";
             this.Text = "Login";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.formLogin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
