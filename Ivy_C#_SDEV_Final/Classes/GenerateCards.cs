@@ -102,13 +102,21 @@ namespace Ivy_C__SDEV_Final.Classes
             {
                 return i;
             }
-            else if (value == "A")
+            else if (value == "J")
             {
                 return 11;
             }
+            else if (value == "Q")
+            {
+                return 12;
+            } 
+            else if (value == "K")
+            {
+                return 13;
+            } 
             else
             {
-                return 10;
+                return 14;
             }
         }
     }
