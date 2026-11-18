@@ -36,11 +36,9 @@ namespace Ivy_C__SDEV_Final.Forms
 
         private void frmMainMenu_Load(object sender, EventArgs e)
         {
-            formLogin LoginForm = new formLogin(/*this*/);
+            formLogin LoginForm = new formLogin(this);
             btnLogin.Enabled = false;
             LoginForm.Show();
-            lblChips.Text = Convert.ToString(Program.chips);
-            lblUsername.Text = Convert.ToString(Program.username);
         }
 
         private void btnBlackjack_Click(object sender, EventArgs e)
@@ -80,7 +78,27 @@ namespace Ivy_C__SDEV_Final.Forms
 
         private void frmMainMenu_Shown(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
+        }
+
+        public void Login()
+        {
+            btnLogin.Enabled = true;
+            RefreshValues();
+        }
+
+        public void RefreshValues()
+        {
+            lblChips.Text = Convert.ToString(Program.chips);
+            lblUsername.Text = Convert.ToString(Program.username);
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formLogin LoginForm = new formLogin(this);
+            btnLogin.Enabled = false;
+            LoginForm.Show();
         }
     }
 }
